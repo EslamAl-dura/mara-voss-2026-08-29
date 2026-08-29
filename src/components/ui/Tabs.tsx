@@ -1,0 +1,2 @@
+import { useState, type ReactNode } from 'react';
+export function Tabs({ items }: { items: { label: string; content: ReactNode }[] }) { const [active, setActive] = useState(0); return <div><div className="mb-6 flex flex-wrap gap-2">{items.map((item, index) => <button key={item.label} onClick={() => setActive(index)} className={`rounded-full px-4 py-2 text-xs font-bold uppercase tracking-widest ${active === index ? 'bg-ember text-paper' : 'border border-ink/20'}`}>{item.label}</button>)}</div><div>{items[active].content}</div></div>; }
