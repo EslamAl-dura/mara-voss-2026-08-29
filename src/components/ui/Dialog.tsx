@@ -1,0 +1,2 @@
+import { type ReactNode } from 'react';
+export function Dialog({ open, onClose, children }: { open: boolean; onClose: () => void; children: ReactNode }) { if (!open) return null; return <div className="fixed inset-0 z-50 grid place-items-center bg-ink/70 p-5" onClick={onClose}><div className="max-w-lg rounded-3xl bg-paper p-8 text-ink shadow-2xl" onClick={event => event.stopPropagation()}>{children}</div></div>; }
