@@ -1,0 +1,2 @@
+/** @type {import('tailwindcss').Config} */
+export default { darkMode: 'class', content: ['./index.html','./src/**/*.{ts,tsx}'], theme: { extend: { fontFamily: { sans: ['DM Sans','sans-serif'], display: ['Fraunces','serif'] }, colors: { ink: 'var(--ink)', paper: 'var(--paper)', ember: 'var(--ember)', mist: 'var(--mist)' } } }, plugins: [] };
